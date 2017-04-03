@@ -2,7 +2,7 @@
 File: main.c                                                                
 
 Description:
-Container for the MPG firmware.  
+Container for the EiE firmware.  
 ***********************************************************************************************************************/
 
 #include "configuration.h"
@@ -57,6 +57,7 @@ void main(void)
 
   /* Debug messages through DebugPrintf() are available from here */
 
+  TimerInitialize();  
   SspInitialize();
   TWIInitialize();
 
@@ -67,12 +68,14 @@ void main(void)
   SdCardInitialize();
 
   /* Application initialization */
-    UserAppInitialize();
+  DrumsetInitialize();
+  UserApp2Initialize();
+  UserApp3Initialize();
   
   /* Exit initialization */
   SystemStatusReport();
   G_u32SystemFlags &= ~_SYSTEM_INITIALIZING;
-  
+    
   /* Super loop */  
   while(1)
   {
@@ -82,6 +85,7 @@ void main(void)
     LedUpdate();
     ButtonRunActiveState();
     UartRunActiveState();
+    TimerRunActiveState(); 
     SspRunActiveState();
     TWIRunActiveState();
     MessagingRunActiveState();
@@ -91,7 +95,9 @@ void main(void)
     SdCardRunActiveState();
 
     /* Applications */
-    UserAppRunActiveState();
+    DrumsetRunActiveState();
+    UserApp2RunActiveState();
+    UserApp3RunActiveState();
     
     /* System sleep*/
     HEARTBEAT_OFF();

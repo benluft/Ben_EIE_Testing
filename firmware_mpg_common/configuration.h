@@ -57,6 +57,7 @@ Includes
 #include "buttons.h"
 #include "leds.h" 
 #include "messaging.h"
+#include "timer.h" 
 
 #include "sam3u_i2c.h"
 #include "sam3u_ssp.h"
@@ -85,7 +86,10 @@ Includes
 /* Common application header files */
 #include "debug.h"
 #include "music.h"
-#include "user_app.h"
+#include "Drumset.h"
+#include "user_app1.h"
+#include "user_app2.h"
+#include "user_app3.h"
 
 
 /**********************************************************************************************************************

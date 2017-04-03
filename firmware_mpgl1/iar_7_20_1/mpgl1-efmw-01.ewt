@@ -253,6 +253,9 @@
         <name>$PROJ_DIR$\..\drivers\sdcard.h</name>
       </file>
       <file>
+        <name>$PROJ_DIR$\..\..\firmware_mpg_common\drivers\timer.h</name>
+      </file>
+      <file>
         <name>$PROJ_DIR$\..\..\firmware_mpg_common\drivers\utilities.h</name>
       </file>
     </group>
@@ -295,6 +298,9 @@
         <name>$PROJ_DIR$\..\drivers\sdcard.c</name>
       </file>
       <file>
+        <name>$PROJ_DIR$\..\..\firmware_mpg_common\drivers\timer.c</name>
+      </file>
+      <file>
         <name>$PROJ_DIR$\..\..\firmware_mpg_common\drivers\utilities.c</name>
       </file>
     </group>
@@ -307,13 +313,19 @@
         <name>$PROJ_DIR$\..\..\firmware_mpg_common\application\debug.h</name>
       </file>
       <file>
+        <name>$PROJ_DIR$\..\..\firmware_mpg_common\application\Drumset.h</name>
+      </file>
+      <file>
         <name>$PROJ_DIR$\..\application\main.h</name>
       </file>
       <file>
         <name>$PROJ_DIR$\..\..\firmware_mpg_common\application\music.h</name>
       </file>
       <file>
-        <name>$PROJ_DIR$\..\..\firmware_mpg_common\application\user_app.h</name>
+        <name>$PROJ_DIR$\..\..\firmware_mpg_common\application\user_app2.h</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\..\firmware_mpg_common\application\user_app3.h</name>
       </file>
     </group>
     <group>
@@ -322,10 +334,16 @@
         <name>$PROJ_DIR$\..\..\firmware_mpg_common\application\debug.c</name>
       </file>
       <file>
+        <name>$PROJ_DIR$\..\..\firmware_mpg_common\application\Drumset.c</name>
+      </file>
+      <file>
         <name>$PROJ_DIR$\..\application\main.c</name>
       </file>
       <file>
-        <name>$PROJ_DIR$\..\..\firmware_mpg_common\application\user_app.c</name>
+        <name>$PROJ_DIR$\..\..\firmware_mpg_common\application\user_app2.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\..\firmware_mpg_common\application\user_app3.c</name>
       </file>
     </group>
   </group>
