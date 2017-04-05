@@ -536,7 +536,7 @@
       <outputs>
         <tool>
           <name>ILINK</name>
-          <file> 136 133 98</file>
+          <file> 98 136 133</file>
         </tool>
       </outputs>
     </file>
