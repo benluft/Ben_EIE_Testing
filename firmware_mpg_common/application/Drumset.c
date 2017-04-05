@@ -99,7 +99,7 @@ void DrumsetInitialize(void)
     Drumset_StateMachine = DrumsetSM_ButtonCheck;
     LCDClearChars(LINE1_START_ADDR, 20); 
     LCDMessage(LINE1_START_ADDR, "Push Button to Start");
-    LCDMessage(LINE2_START_ADDR, "BassHiHatCrashSnare");
+    LCDMessage(LINE2_START_ADDR, "BassHiHat Tom Snare");
   }
   else
   {
